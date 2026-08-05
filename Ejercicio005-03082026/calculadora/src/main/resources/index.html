@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Calcula el indice de masa coporal (IMC) con esta herramienta"
+    />
+    <title>Calculadora IMC</title>
+
+    <!--estilo interno -->
+    <style>
+      /* resetar y crear la base */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      /*contenedor principal*/
+      main {
+        max-width: 600px;
+        width: 100%;
+        background: white;
+        padding: 1rem;
+        border-radius: 24px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        margin: 1rem 0;
+      }
+
+      /*header titulo global*/
+      header[role="banner"] {
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+      header[role="banner"] h1 {
+        font-size: 2.2rem;
+        color: #333;
+      }
+
+      header[role="banner"] p {
+        color: yellow;
+        font-size: 1rem;
+      }
+
+      /*article (calculadora)*/
+      article {
+        margin-bottom: 2rem;
+      }
+
+      article > header h2 {
+        font-size: 1.5rem;
+        color: #d20808;
+        margin-bottom: 0.25rem;
+      }
+
+      article > header p {
+        color: #555;
+        margin-bottom: 1.5rem;
+      }
+
+      /*formulario*/
+      /*clases en css se reconocen cuando le coloca un punto delante*/
+      .campo {
+        margin-bottom: 1.2rem;
+      }
+      label {
+        display: block;
+        font-weight: 600;
+        color: #444;
+        margin-bottom: 0.3rem;
+      }
+      input:focus {
+        border-color: #667eea;
+        outline: none;
+      }
+      .help-text {
+        display: block;
+        font-size: 0.8rem;
+        color: #888;
+        margin-top: 0.2rem;
+      }
+
+      button[type="submit"]:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        cursor: pointer;
+      }
+      /*identificador (id) en css se reconocen por llevar numeral (#) delante */
+      #resultado.success {
+        display: block;
+        background: #f0f7ff;
+        border: 2px solid #667eea;
+      }
+
+      #resultado.error {
+        display: block;
+        background: #ddf318;
+        color: #d20808;
+        border: 2px solid #f44336;
+      }
+
+      /*Categorias (details)*/
+      details {
+        margin-top: 1.5rem;
+        padding: 1rem;
+        background: #e6eef7;
+        border-radius: 10px;
+      }
+
+      details summary {
+        font-weight: 600;
+        cursor: pointer;
+        color: rgb(7, 61, 122);
+      }
+
+      details ul {
+        list-style: none;
+        margin-top: 0.5rem;
+        padding-left: 0;
+      }
+
+      details ul li {
+        padding: 0.2rem 0;
+      }
+
+      /*Aside*/
+      aside {
+        background: #aee55c;
+        padding: 1.2rem;
+        border-radius: 12px;
+        border-left: 4px solid #66ea9d;
+        margin-top: 1.5rem;
+      }
+
+      aside h3 {
+        color: darkgreen;
+        margin-bottom: 0.5rem;
+      }
+
+      aside p {
+        color: #555;
+        text-align: justify;
+      }
+
+      /*footer*/
+      footer[role="contentinfo"] {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.8);
+      }
+      footer[role="contentinfo"] a {
+        color: white;
+        text-decoration: none;
+      }
+
+      footer[role="contentinfo"] a:hover {
+        color: rgb(67, 12, 156);
+        text-decoration: underline;
+      }
+      /* resposibilidad adpatacion apantalla pequeñas*/
+      @media (max-with: 480px) {
+        /*css personalizado*/
+        main {
+          background: rgb(244, 252, 2);
+          padding: 1.5rem;
+        }
+
+        header[role="banner"] h1 {
+          font-size: 1.8rem;
+          color: #360be6;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ESTRUCTURA SEMANTICA PARA HACER EL COMENTARIO USO CONTROL+Ç LOS COMENTARIO EN HTML SE USA < ! -- -- >  -->
+    <!-- encabezado -->
+
+    <header role="banner">
+      <h1>Calculadora de IMC</h1>
+      <!--cabecero de nivel 1-->
+      <p>Índice de Masa Corporal</p>
+      <!--parrafo simple-->
+    </header>
+    <!-- contenido principal -->
+    <main>
+      <!--SOLO PUEDE HABER UN MAIN EN TODA LA PAGINA-->
+      <article>
+        <header>
+          <h2 id="calc-heading">Calcula tu IMC</h2>
+          <p>
+            Ingresa tu <b>peso</b> y <strong>altura</strong> para obtener tu
+            indice y categoría
+          </p>
+        </header>
+        <section>
+          <h3 id="form-heading">Datos personales</h3>
+          <!--FORMULARIO PARA RECOGER PESO Y ALTURA-->
+          <form id="imc-form">
+            <div class="campo">
+              <label for="peso">Peso (kg)</label>
+              <input
+                type="number"
+                id="peso"
+                placeholder="Ej:70"
+                step="0.1"
+                min="1"
+                required
+              />
+              <!--span es un contenedor en linea-->
+              <span id="peso-help" class="help-text"
+                >Ingresa tu peso en Kilogramos (*)</span
+              >
+            </div>
+            <div class="campo">
+              <label for="altura">Altura (metros)</label>
+              <input
+                type="number"
+                id="altura"
+                placeholder="Ej:1.75"
+                step="0.01"
+                min="0.5"
+                required
+              />
+              <span id="altura-help" class="help-text"
+                >Ingresa tu altura en metros (ej. 1.75)</span
+              >
+            </div>
+            <button type="submit" id="calcular">Calcular IMC</button>
+          </form>
+        </section>
+        <!--SECCION DONDE SE MOSTRARÁ EL RESULTADO-->
+        <section>
+          <h3>Resultado de IMC</h3>
+          <div id="resultado"></div>
+        </section>
+        <footer>
+          <details>
+            <summary>Categorias de IMC</summary>
+            <!--lista con viñetas ul-->
+            <ul>
+              <!--item de la lista li-->
+              <li>Bajo peso &lt; 18.5</li>
+              <li>Peso normal 18.6 - 24.9</li>
+              <li>Sobrepeso 25.0 - 29.9</li>
+              <li>Obesidad &ge; 30</li>
+            </ul>
+          </details>
+        </footer>
+      </article>
+
+      <aside>
+        <h3>¿Qué es el IMC?</h3>
+        <p>
+          El Índice de Masa Corporal es una medida que relaciona el peso y la
+          altura para estimar si una persona tiene un peso saludable.
+          <strong>Importante:</strong>No es un diagnostico médico; consulta a un
+          profesional para una evaluación completa
+        </p>
+        <p>(*) obligatorio</p>
+      </aside>
+    </main>
+    <footer role="contentinfo">
+      <p>
+        &copy 2026 Calcualdora IMC . Codigo abierto .
+        <a href="https://www.sergas.gal" target="_blank"
+          >Servico Gallego de Salud</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
