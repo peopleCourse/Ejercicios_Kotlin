@@ -1,0 +1,41 @@
+Arguments: 
+  C:\Users\daysi\.gradle\nodejs\node-v22.0.0-win-x64\node.exe C:\Users\daysi\.gradle\yarn\yarn-v1.22.17\bin\yarn.js --ignore-scripts
+
+PATH: 
+  C:\Program Files\Java\jdk-26.0.1\bin;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;c:\program files\extensis\suitcase fusion\;C:\Program Files\AutoFirma\AutoFirma;C:\wamp64\strawberry\c\bin;C:\wamp64\strawberry\perl\site\bin;C:\wamp64\strawberry\perl\bin;C:\Program Files\swift\icu-69.1\usr\bin;C:\Program Files\swift\runtime-development\usr\bin;C:\Library\Developer\Toolchains\unknown-Asserts-development.xctoolchain\usr\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\wamp64\bin\php\php8.3.28;C:\ProgramData\chocolatey\bin;C:\tools\php85;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\MinGW\bin;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;%KOTLIN_HOME%\bin;C:\Program Files\PowerShell\7\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;c:\program files\extensis\suitcase fusion\;C:\Program Files\AutoFirma\AutoFirma;C:\Program Files\swift\icu-69.1\usr\bin;C:\Program Files\swift\runtime-development\usr\bin;C:\Library\Developer\Toolchains\unknown-Asserts-development.xctoolchain\usr\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\daysi\AppData\Local\Programs\Windsurf\bin;C:\Users\daysi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\daysi\AppData\Local\Python\bin;C:\Users\daysi\AppData\Local\GitHubDesktop\bin;C:\Users\daysi\AppData\Roaming\npm;C:\Users\daysi\AppData\Local\Microsoft\WindowsApps;C:\MinGW\bin;C:\Kotlin\kotlinc\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2026.2\bin;C:\ProgramData\daysi\GitHubDesktop\bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  22.0.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EISDIR: illegal operation on a directory, symlink 'E:\003-IFCT048PO-GRI-2026\SEMANA3-27-31JULIO\Ejercicios_Kotlin\Ejercicio005-03082026\calculadora\build\js\packages_imported\kotlin-test-js-runner\0.0.1' -> 'E:\003-IFCT048PO-GRI-2026\SEMANA3-27-31JULIO\Ejercicios_Kotlin\Ejercicio005-03082026\calculadora\build\js\node_modules\kotlin-test-js-runner'
+
+npm manifest: 
+  {
+    "name": "calculadora",
+    "version": "unspecified",
+    "private": true,
+    "workspaces": [
+      "packages\\calculadora",
+      "packages\\calculadora-test",
+      "packages_imported\\kotlin-test-js-runner\\0.0.1"
+    ],
+    "devDependencies": {},
+    "dependencies": {},
+    "peerDependencies": {},
+    "optionalDependencies": {},
+    "bundledDependencies": [],
+    "resolutions": {}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

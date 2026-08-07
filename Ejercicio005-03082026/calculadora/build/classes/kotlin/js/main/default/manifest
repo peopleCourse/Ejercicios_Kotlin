@@ -1,0 +1,10 @@
+abi_version=1.8.0
+builtins_platform=JS
+compiler_version=2.0.0
+depends=org.jetbrains.kotlin\:kotlin-dom-api-compat kotlin
+ir_signature_versions=1,2
+jsOutputName=calculadora
+metadata_version=1.4.1
+serializedIrFileFingerprints=2gss3ppoa8tye.coipil8zl7v8
+serializedKlibFingerprint=v7gib551jotg.n6b988x7jg0z
+unique_name=calculadora
