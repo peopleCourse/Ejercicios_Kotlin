@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================
+    strings.xml
+    Aquí van TODOS los textos de la app, separados del diseño.
+
+    Es el mismo principio que separar contenido (HTML) de estilo (CSS):
+    aquí separamos contenido (texto) de estructura (layout XML).
+    Ventaja principal: para traducir la app a otro idioma, solo hay
+    que crear otra carpeta values-en/ (inglés), values-fr/ (francés)...
+    con este mismo archivo traducido, sin tocar el layout.
+    ============================================================
+-->
+<resources>
+    <string name="app_name">CalculadoraIMC</string>
+
+    <!-- Header -->
+    <string name="titulo_app">Calculadora de IMC</string>
+    <string name="subtitulo_app">Índice de Masa Corporal</string>
+
+    <!-- Sección datos personales -->
+    <string name="titulo_datos_personales">Datos personales</string>
+
+    <string name="label_peso">Peso (kg)</string>
+    <string name="hint_peso">Ej: 70</string>
+    <string name="ayuda_peso">Ingresa tu peso en kilogramos (*)</string>
+
+    <string name="label_altura">Altura (metros)</string>
+    <string name="hint_altura">Ej: 1.75</string>
+    <string name="ayuda_altura">Ingresa tu altura en metros (ej. 1.75)</string>
+
+    <string name="boton_calcular">Calcular IMC</string>
+
+    <!-- Categorías -->
+    <string name="categorias_imc">Categorías de IMC:\n• Bajo peso: &lt; 18.5\n• Peso normal: 18.6 - 24.9\n• Sobrepeso: 25.0 - 29.9\n• Obesidad: ≥ 30</string>
+
+    <!-- Aside / información -->
+    <string name="titulo_aside">¿Qué es el IMC?</string>
+    <string name="texto_aside">El Índice de Masa Corporal es una medida que relaciona el peso y la altura para estimar si una persona tiene un peso saludable. Importante: No es un diagnóstico médico; consulta a un profesional para una evaluación completa.</string>
+    <string name="texto_obligatorio">(*) obligatorio</string>
+
+</resources>

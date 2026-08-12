@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ============================================================
+    activity_main.xml
+    Equivalente al index.html original.
+
+    Aquí describimos QUÉ se ve en pantalla (los "elementos"),
+    igual que hacía el HTML con <header>, <form>, <input>, etc.
+    El "CSS" en Android se hace con atributos (android:...) dentro
+    de cada etiqueta, en vez de una hoja de estilos aparte.
+    ============================================================
+-->
+
+<!-- ScrollView = permite hacer scroll si el contenido no cabe en pantalla,
+     equivalente a que el body del HTML permitiera scroll normal -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#667eea">
+    <!-- color de fondo, similar al gradiente del <body> del CSS -->
+
+    <!-- LinearLayout vertical = equivalente al <main> del HTML,
+         organiza todos los elementos uno debajo de otro -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ================= TARJETA BLANCA (equivalente a <main>) ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp">
+
+            <!-- ===== HEADER (equivalente a <header role="banner">) ===== -->
+            <TextView
+                android:id="@+id/tituloApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_app"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitulo_app"
+                android:textSize="14sp"
+                android:textColor="#888888"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- ===== SECCIÓN: Datos personales (equivalente a <section><h3>) ===== -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_datos_personales"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#d20808"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- CAMPO PESO: equivalente a <label for="peso">+<input id="peso">+<span class="help-text"> -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_peso"
+                android:textStyle="bold"
+                android:textColor="#444444"/>
+
+            <!-- EditText = equivalente al <input type="number"> del HTML -->
+            <EditText
+                android:id="@+id/campoPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_peso"
+                android:inputType="numberDecimal"
+                android:autofillHints="off"/>
+            <!-- inputType="numberDecimal" es el equivalente a type="number" step="0.1" -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ayuda_peso"
+                android:textSize="11sp"
+                android:textColor="#888888"
+                android:layout_marginBottom="15dp"/>
+
+            <!-- CAMPO ALTURA: mismo patrón que el campo peso -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_altura"
+                android:textStyle="bold"
+                android:textColor="#444444"/>
+
+            <EditText
+                android:id="@+id/campoAltura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_altura"
+                android:inputType="numberDecimal"
+                android:autofillHints="off"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ayuda_altura"
+                android:textSize="11sp"
+                android:textColor="#888888"
+                android:layout_marginBottom="15dp"/>
+
+            <!-- BOTÓN: equivalente a <button type="submit" id="calcular"> -->
+            <Button
+                android:id="@+id/botonCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/boton_calcular"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#667eea"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- ===== RESULTADO: equivalente a <div id="resultado"> ===== -->
+            <TextView
+                android:id="@+id/textoResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <!-- ===== CATEGORÍAS: equivalente a <details><summary>Categorías</summary><ul> ===== -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e6eef7"
+                android:padding="12dp"
+                android:layout_marginTop="15dp"
+                android:textColor="#073d7a"
+                android:text="@string/categorias_imc"/>
+
+        </LinearLayout>
+        <!-- ===== fin tarjeta blanca ===== -->
+
+        <!-- ===== ASIDE: equivalente a <aside><h3>¿Qué es el IMC?</h3><p>...</p></aside> ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#aee55c"
+            android:padding="14dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_aside"
+                android:textStyle="bold"
+                android:textColor="#006400"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#555555"
+                android:text="@string/texto_aside"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_obligatorio"
+                android:textColor="#555555"
+                android:layout_marginTop="6dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>l
