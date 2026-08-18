@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TareasApp</string>
+    <string name="hint_nueva_tarea">Escribe una nueva tarea…</string>
+    <string name="boton_agregar">Agregar</string>
+    <string name="boton_eliminar">Eliminar</string>
+    <string name="titulo_lista">Mis tareas</string>
+</resources>
