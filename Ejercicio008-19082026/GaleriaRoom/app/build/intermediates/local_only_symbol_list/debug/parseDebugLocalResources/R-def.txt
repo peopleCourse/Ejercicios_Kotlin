@@ -1,0 +1,17 @@
+R_DEF: Internal format may change without notice
+local
+id btnSave
+id etDescription
+id etTitle
+id fabAdd
+id ivImage
+id ivPreview
+id recyclerView
+id tvDescription
+id tvEmpty
+id tvTitle
+layout activity_add_image
+layout activity_main
+layout item_image
+string app_name
+style Theme.GaleriaRoom

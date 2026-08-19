@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.GaleriaRoom" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1A237E</item>
+        <item name="colorPrimaryDark">#0D133D</item>
+        <item name="colorAccent">#FF7043</item>
+    </style>
+</resources>
