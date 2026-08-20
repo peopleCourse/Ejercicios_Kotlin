@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="E:\003-IFCT048PO-GRI-2026\SEMANA17-21AGOSTO\mp3\ReproductorMP3App_Solucion\app\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="E:\003-IFCT048PO-GRI-2026\SEMANA17-21AGOSTO\mp3\ReproductorMP3App_Solucion\app\src\debug\shaders"/></dataSet></merger>

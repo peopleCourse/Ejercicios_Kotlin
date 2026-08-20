@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/layout_item_cancion.xml.flat",
+        "source": "com.example.reproductormp3app-main-41:/layout/item_cancion.xml"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/layout_activity_player.xml.flat",
+        "source": "com.example.reproductormp3app-main-41:/layout/activity_player.xml"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/layout_activity_main.xml.flat",
+        "source": "com.example.reproductormp3app-main-41:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/raw_amanecer.mp3.flat",
+        "source": "com.example.reproductormp3app-main-41:/raw/amanecer.mp3"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/raw_noches_de_neon.mp3.flat",
+        "source": "com.example.reproductormp3app-main-41:/raw/noches_de_neon.mp3"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/drawable_amanecer.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/drawable/amanecer.png"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/drawable_noches_de_neon.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/drawable/noches_de_neon.png"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/drawable_ritmo_del_rio.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/drawable/ritmo_del_rio.png"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/raw_ciudad_de_cristal.mp3.flat",
+        "source": "com.example.reproductormp3app-main-41:/raw/ciudad_de_cristal.mp3"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/raw_ritmo_del_rio.mp3.flat",
+        "source": "com.example.reproductormp3app-main-41:/raw/ritmo_del_rio.mp3"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/drawable_ciudad_de_cristal.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/drawable/ciudad_de_cristal.png"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/raw_camino_al_sur.mp3.flat",
+        "source": "com.example.reproductormp3app-main-41:/raw/camino_al_sur.mp3"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/drawable_camino_al_sur.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/drawable/camino_al_sur.png"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.reproductormp3app-merged_res-39:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.reproductormp3app-main-41:/mipmap-xxxhdpi/ic_launcher_round.png"
+    }
+]

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ReproductorMP3App</string>
+    <string name="titulo_principal">BUENOS DIAS PEOPLE</string>
+    <string name="sub_titulo">Mis canciones favoritas</string>
+    <string name="caratula_text">Carátula de la canción</string>
+</resources>

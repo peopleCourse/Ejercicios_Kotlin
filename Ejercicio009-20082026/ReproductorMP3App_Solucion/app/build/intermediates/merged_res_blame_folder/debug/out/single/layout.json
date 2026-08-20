@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.example.reproductormp3app-mergeDebugResources-38:/layout/activity_main.xml",
+        "source": "com.example.reproductormp3app-main-41:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.reproductormp3app-mergeDebugResources-38:/layout/item_cancion.xml",
+        "source": "com.example.reproductormp3app-main-41:/layout/item_cancion.xml"
+    },
+    {
+        "merged": "com.example.reproductormp3app-mergeDebugResources-38:/layout/activity_player.xml",
+        "source": "com.example.reproductormp3app-main-41:/layout/activity_player.xml"
+    }
+]

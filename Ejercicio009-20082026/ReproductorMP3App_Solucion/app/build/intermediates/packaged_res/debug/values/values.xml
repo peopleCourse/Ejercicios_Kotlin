@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="azul_claro">#2196F3</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#EEEEEE</color>
+    <color name="naranja">#FF5722</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="verde_suave">#BFF4D4</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">ReproductorMP3App</string>
+    <string name="caratula_text">Carátula de la canción</string>
+    <string name="sub_titulo">Mis canciones favoritas</string>
+    <string name="titulo_principal">BUENOS DIAS PEOPLE</string>
+    <style name="Theme.ReproductorMP3App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="android:statusBarColor">@color/purple_700</item>
+    </style>
+</resources>
